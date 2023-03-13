@@ -438,45 +438,56 @@
     
 <script type="text/javascript" src="./Abrid_files/jquery.signature.js.download"></script>
 <script>
-$(function() {
+$(document).ready(function() {
+    var canvas = document.getElementById('sig-canvas');
+    var signaturePad = null;
+    var isDrawing = false;
 
-    var sig = $('#sig').signature({syncField: '#signature64', syncFormat: 'PNG'});
-    $('#clear').click(function(e) {
-        e.preventDefault();
+    canvas.addEventListener('touchstart', function(e) {
+        isDrawing = true;
+        var touch = e.touches[0];
+        var x = touch.clientX - canvas.offsetLeft;
+        var y = touch.clientY - canvas.offsetTop;
+        signaturePad = { x: x, y: y };
+    });
+
+    canvas.addEventListener('touchmove', function(e) {
+        if (!isDrawing) return;
+        var touch = e.touches[0];
+        var x = touch.clientX - canvas.offsetLeft;
+        var y = touch.clientY - canvas.offsetTop;
+        drawLine(signaturePad.x, signaturePad.y, x, y);
+        signaturePad.x = x;
+        signaturePad.y = y;
+    });
+
+    canvas.addEventListener('touchend', function(e) {
+        isDrawing = false;
+    });
+
+    $('#clear').click(function() {
+        clearCanvas();
+    });
+
+    sig = $('#sig').signature({syncField: '#signature64', syncFormat: 'PNG'});
+
+    function drawLine(x1, y1, x2, y2) {
+        var ctx = canvas.getContext('2d');
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.stroke();
+    }
+
+    function clearCanvas() {
+        var ctx = canvas.getContext('2d');
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
         sig.signature('clear');
-        $("#signature64").val('');
-    });
-
-    $.ajaxSetup({
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]')
-                .attr('content')
-        }
-    });
-
-    $("#province").change(function() {
-        jQuery.ajax({
-            url: "https://abrid-sm.ma/caravane/lieux",
-            method: 'POST',
-            data: {
-                'province': $('#province').val(),
-            },
-            success: function(result) {
-
-                $("#datalieu").empty();
-                $("#datalieu").html(result);
-                $("#data_date").slideUp();
-            }
-        });
-    });
-
-    $("body").on('change', "#lieu", function() {
-        $("#date_event").val($( "#lieu option:selected" ).attr('data-date'));
-        $("#data_date").slideDown();
-    });
-
-
+        $('#signature64').val('');
+    }
 });
+
+ 
 </script>
 
 
