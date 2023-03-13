@@ -74,7 +74,7 @@
         </div>
     </div>
     <!-- eof .modal -->
-
+    
     <!-- wrappers for visual page editor and boxed version of template -->
     <div id="canvas">
         <div id="box_wrapper">
@@ -270,6 +270,8 @@
 
 
                                 </div>
+
+
                                 <div class="col-md-12">
                                     <label class="" for="">Signature:</label>
                                     <br>
@@ -278,6 +280,24 @@
                                     <button id="clear" class="btn btn-danger btn-sm">Supprimer Signature</button>
                                     <textarea id="signature64" name="signed" style="display: none"></textarea>
                                 </div>
+                                <script>
+                                    // get the canvas element
+var canvas = document.getElementById('myCanvas');
+
+// disable scrolling on touch devices when the canvas is touched
+canvas.addEventListener('touchstart', function(e) {
+  e.preventDefault();
+  document.body.style.overflow = 'hidden';
+});
+
+// enable scrolling on touch devices when anything else is touched
+document.addEventListener('touchstart', function(e) {
+  if (e.target !== canvas) {
+    document.body.style.overflow = 'auto';
+  }
+});
+                                </script>
+                                
                                 <h6 style="font-size: 12px;/*! margin: ; */text-align: justify;color: green;line-height: 17px;">
                                     La présence à cette action vaut acceptation d’utilisation des images par le CRI
                                     Souss Massa / المشاركة في هاته الورشة تعطي للمركز الجهوي للإستثمار سوس ماسة الحق في
@@ -763,6 +783,6 @@ $(function() {
 			return str.substr(0, index) + value + str.substr(index)
 		}
 	</script><a href="https://abrid-sm.ma/caravane#" id="toTop" style="display: block;"><span id="toTopHover"></span>To Top</a>
-    <h1>chaima abajbaj</h1>
+    
     </body>
 </html>
