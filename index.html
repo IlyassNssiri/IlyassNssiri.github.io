@@ -284,7 +284,21 @@
                                     <button id="clear" class="btn btn-danger btn-sm">Supprimer Signature</button>
                                     <textarea id="signature64" name="signed" style="display: none"></textarea>
                                 </div>
-      
+                                <script>
+                                    var canvas = document.getElementById('signatureCanvas');
+                                    var ctx = canvas.getContext('2d');
+
+                                    canvas.addEventListener('touchstart', function(event) {
+                                        ctx.beginPath();
+                                        ctx.moveTo(event.touches[0].clientX, event.touches[0].clientY);
+                                    });
+
+                                    canvas.addEventListener('touchmove', function(event) {
+                                        event.preventDefault();
+                                        ctx.lineTo(event.touches[0].clientX, event.touches[0].clientY);
+                                        ctx.stroke();
+                                    });
+                                </script>
 
                                 
                                 <h6 style="font-size: 12px;/*! margin: ; */text-align: justify;color: green;line-height: 17px;">
