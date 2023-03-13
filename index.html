@@ -34,6 +34,10 @@
         width: 100% !important;
         height: auto;
     }
+
+    .kbw-signature canvas {
+  touch-action: none;
+}
 </style>
 <style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style><script type="text/javascript" charset="UTF-8" src="./Abrid_files/common.js.download"></script><script type="text/javascript" charset="UTF-8" src="./Abrid_files/util.js.download"></script></head>
 
@@ -280,23 +284,8 @@
                                     <button id="clear" class="btn btn-danger btn-sm">Supprimer Signature</button>
                                     <textarea id="signature64" name="signed" style="display: none"></textarea>
                                 </div>
-                                <script>
-                                    // get the canvas element
-var canvas = document.getElementById('myCanvas');
+      
 
-// disable scrolling on touch devices when the canvas is touched
-canvas.addEventListener('touchstart', function(e) {
-  e.preventDefault();
-  document.body.style.overflow = 'hidden';
-});
-
-// enable scrolling on touch devices when anything else is touched
-document.addEventListener('touchstart', function(e) {
-  if (e.target !== canvas) {
-    document.body.style.overflow = 'auto';
-  }
-});
-                                </script>
                                 
                                 <h6 style="font-size: 12px;/*! margin: ; */text-align: justify;color: green;line-height: 17px;">
                                     La présence à cette action vaut acceptation d’utilisation des images par le CRI
