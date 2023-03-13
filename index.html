@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://abrid-sm.ma/caravane -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Abrid</title>
+    
+    <!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="yUyB0GKUk9PFUszB1LeWNWCOK77y3CYEcDPpg40A">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="./Abrid_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Abrid_files/animations.css">
+    <link rel="stylesheet" href="./Abrid_files/fonts.css">
+        <link rel="stylesheet" href="./Abrid_files/main_rtl.css" class="color-switcher-link">
+        
+    
+    <script src="./Abrid_files/modernizr-2.6.2.min.js.download"></script>
+
+    <!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+    
+<link rel="stylesheet" type="text/css" href="./Abrid_files/jquery.signature.css">
+  
+<style>
+    .kbw-signature { width: 100%; height: 200px;}
+    #sig canvas{
+        width: 100% !important;
+        height: auto;
+    }
+</style>
+<style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style><script type="text/javascript" charset="UTF-8" src="./Abrid_files/common.js.download"></script><script type="text/javascript" charset="UTF-8" src="./Abrid_files/util.js.download"></script></head>
+
+<body>
+    <!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+    
+
+    <!-- search modal -->
+    <div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+                <i class="rt-icon2-cross2"></i>
+            </span>
+        </button>
+        <div class="widget widget_search">
+            <form method="get" class="searchform search-form form-inline" action="https://abrid-sm.ma/">
+                <div class="form-group">
+                    <input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+                </div>
+                <button type="submit" class="theme_button">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Unyson messages modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+        <div class="fw-messages-wrap ls with_padding">
+            <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+            <!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+        </div>
+    </div>
+    <!-- eof .modal -->
+
+    <!-- wrappers for visual page editor and boxed version of template -->
+    <div id="canvas">
+        <div id="box_wrapper">
+
+            <!-- template sections -->
+
+            <section class="page_toplogo table_section ls">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 text-center text-sm-left">
+                          
+                        </div>
+
+                        <div class="col-sm-4 text-center" style="text-align: center;">
+                        <a href="https://abrid-sm.ma/caravane#" class="logo top_logo">
+                                <img src="./Abrid_files/abrid.png" alt="">
+                            </a>
+
+                        </div>
+
+                        <div class="col-sm-4 text-center text-sm-right">
+                            
+                        </div>
+
+
+                        <!-- header toggler -->
+                        <span class="toggle_menu">
+                            <span></span>
+                        </span>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="page_header_wrapper affix-wrapper" style="height: 80px;"><header class="page_header header_color bordered_items affix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <!-- main nav start -->
+                            <nav class="mainmenu_wrapper" style="">
+                                <ul class="mainmenu nav sf-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+                                    <li>
+                                        <a href="https://abrid-sm.ma/">الرئيسية</a>
+
+
+                                    </li><li>
+
+
+                                    </li><li>
+                                        <a href="https://abrid-sm.ma/caravane#PIAFE">برنامج انطلاق</a>
+
+
+                                    </li><li>
+                                        <a href="https://abrid-sm.ma/caravane#Financement">تمويل</a>
+
+                                    </li>
+
+
+                                    <li>
+                                        <a href="https://abrid-sm.ma/caravane#Accompagnement">مواكبة</a>
+
+                                    </li>
+
+                                    <li>
+                                        <a href="https://abrid-sm.ma/caravane#Partenaires">شركاء</a>
+
+                                    </li>
+
+
+                                    <li style="background: linear-gradient(to right, #d5a570, #d5a570 10%, #e1b875 50%, #f6daa1 66.6666%, #fbe5c1 90%);">
+                                        <a href="https://abrid-sm.ma/login" class="main-menu__btn" style="color: #2f363c;"> <span class="fa fa-briefcase" style="margin-right: 6px;"></span>مشروعي</a>
+
+                                    </li>
+
+                                    <!-- eof contacts -->
+
+
+                                </ul>
+                                
+                            </nav>
+                            <!-- eof main nav -->
+                        </div>
+                    </div>
+                </div>
+            </header></div>
+
+            <section class="page_breadcrumbs cs texture_bg section_padding_top_65 section_padding_bottom_65">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center" style="margin-top: 21px !important;">
+                <h2 class="grey">Caravane Abrid - Intelaka</h2>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div style="background: white;margin-top: -90px;">
+
+    <section class="section_padding_100">
+        <div class="container">
+            <form class="contact-form columns_padding_10 row" method="post" action="https://abrid-sm.ma/caravane">
+                <input type="hidden" name="_token" value="yUyB0GKUk9PFUszB1LeWNWCOK77y3CYEcDPpg40A">                <div class="row col-sm-6" style="margin-right: 10px;background-color: #f2f2f2;">
+
+                    <div>
+                        <div class=" with_padding" style="text-align: left;">
+                            <div class="col-sm-12" style="margin-top: 0px !important;margin-bottom: 9px !important;">
+                                <div class="form-group">
+                                    <h4 style="color: #015935;"> Sujet : </h4>
+                                    <input type="text" disabled="" aria-required="true" class="form-control with_icon" value="Caravane Abrid - Intelaka" style="margin-top: 4px;"><br>
+
+
+                                </div>
+                            </div>
+                            <div class="col-sm-12" style="margin-top: 0px !important;margin-bottom: 9px !important;">
+                                <div class="form-group">
+                                    <h4 style="color: #015935;"> Province :</h4>
+                                    <select required="" id="province" name="province" class="form-control input-lg">
+                                        <option value="">Choisir Votre Province</option>
+                                                                                <option value="1">AGADIR IDA OUTANANE</option>
+                                                                                <option value="2">TIZNIT</option>
+                                                                            </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-12" style="margin-top: 0px !important;margin-bottom: 9px !important;">
+                                <div id="datalieu" class="form-group">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-12" style="margin-top: 0px !important;margin-bottom: 9px !important;">
+                                <div style="display:none;" id="data_date" class="form-group">
+                                    <h4 style="color: #015935;"> Date : </h4>
+                                    <input type="text" readonly="" size="30" name="date_event" id="date_event" class="form-control with_icon" style="margin-top: 4px;"><br>
+
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="col-sm-12 bottommargin_0">
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-sm-6" style="margin-left: 10px;background-color: #f2f2f2;">
+                    <div>
+                        <div class="  with_padding" style="text-align: left;">
+
+                            <div class="col-sm-12" style="margin-top: 0px !important;margin-bottom: 9px !important;">
+                                <div class="form-group">
+                                    <h4 style="color: #015935;"> Porteur du Projet : </h4>
+                                    <p style="text-align: left;"><strong>Civilité</strong></p>
+                                    <select required="" name="civillite" class="form-control input-lg">
+                                        <option></option>
+                                        <option value="mr">Mr</option>
+                                        <option value="mme">Mme</option>
+                                        <option value="mlle">Mlle</option>
+                                    </select> <br>
+
+                                    <label for="fname"><strong>Nom :</strong>
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input type="text" required="" size="30" value="" name="fname" id="fname" class="form-control with_icon" placeholder="Nom *" style="margin-top: 4px;">
+                                    <br>
+                                    <label for="lname"> <strong>Prénom :</strong>
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input type="text" required="" size="30" value="" name="lname" id="lname" class="form-control with_icon" placeholder="Prénom*" style="margin-top: 4px;">
+                                    <br>
+                                    <label for="cin"><strong>CIN :</strong>
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input type="text" required="" size="30" value="" name="cin" id="cin" class="form-control with_icon" placeholder="CIN *" style="margin-top: 4px;">
+                                    <br>
+                                    <label for="phone"> <strong>Téléphone</strong>
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="form-gp mt-2 d-inline-block">
+                                        <span class="border-end country-code px-2"><strong>+212</strong></span>
+                                        <input type="text" required="" name="phone" class="form-control" id="ec-mobile-number" aria-describedby="emailHelp" placeholder="600000000" maxlength="9">
+                                    </div> <br>
+                                    <label for="email"><strong>Adresse mail</strong>
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input type="email" required="" size="30" value="" name="email" id="email" class="form-control with_icon" placeholder="Adresse mail*">
+
+
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="" for="">Signature:</label>
+                                    <br>
+                                    <div id="sig" class="kbw-signature"><canvas width="448" height="198">Your browser doesn't support signing</canvas></div>
+                                    <br>
+                                    <button id="clear" class="btn btn-danger btn-sm">Supprimer Signature</button>
+                                    <textarea id="signature64" name="signed" style="display: none"></textarea>
+                                </div>
+                                <h6 style="font-size: 12px;/*! margin: ; */text-align: justify;color: green;line-height: 17px;">
+                                    La présence à cette action vaut acceptation d’utilisation des images par le CRI
+                                    Souss Massa / المشاركة في هاته الورشة تعطي للمركز الجهوي للإستثمار سوس ماسة الحق في
+                                    استعمال الصور</h6>
+                            </div>
+
+
+
+                            <div class="col-sm-12 bottommargin_0" style="padding-bottom: 20px;">
+
+                                <div class="contact-form-submit topmargin_10" style="text-align: center;">
+                                    <button type="submit" class="theme_button color1 wide_button margin_0">Envoyer</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+</div>
+
+
+
+
+            
+	
+			<footer class="page_footer ds parallax section_padding_top_75 section_padding_bottom_65" style="background-position: 50% 6px;">
+				<div class="container">
+					<div class="row">
+
+                        
+
+						<div class="col-md-4 col-sm-6 rtl">
+                        <img src="./Abrid_files/logoASSOCIATE.png" alt="">
+						<div class="widget widget_instagram topmargin_25">
+                       
+								<div class="instafeed" style="text-align: center;">
+							<ul class="footer-contact-info"> <h4><span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="margin-right: 3px;"></span> عمالة أكادير إداوتنان :</h4>
+					
+                                <h4><span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="margin-right: 3px;"></span> إقليم تيزنيت :</h4>
+							 
+                                <li class="direction"><span class="glyphicon glyphicon-earphone" aria-hidden="true" style="margin-right: 3px;"></span><a href="tel:+212525143944">+212 525 143 944</a></li><br>
+							
+                            </ul><br>
+						
+								</div>
+							</div>
+							
+						</div>
+
+						<div class="col-md-4 col-sm-6 rtl">
+                        <img src="./Abrid_files/logoTGC.png" alt="">
+							<div class="widget widget_instagram topmargin_25">
+                           
+								<div class="instafeed" style="text-align: center;">
+							
+
+								<ul class="footer-contact-info"> <h4><span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="margin-right: 3px;"></span> عمالة إنزكان أيت ملول :</h4>
+							   <h4><span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="margin-right: 3px;"></span> إقليم أشتوكة أيت باها :</h4>
+                               <li class="direction"><span class="glyphicon glyphicon-earphone" aria-hidden="true" style="margin-right: 3px;"></span><a href="tel:+212520494221">0666607861</a></li>
+                             </ul><br>
+						
+							 
+							
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 rtl">
+                        <img src="./Abrid_files/logoMB.png" alt="">
+							<div class="widget widget_instagram topmargin_25">
+                           
+								<div class="instafeed" style="text-align: center;">
+						 
+							 
+                                <ul class="footer-contact-info"> <h4><span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="margin-right: 3px;"></span> إقليم تارودانت :</h4>
+						
+                        <li class="direction"><span class="glyphicon glyphicon-earphone" aria-hidden="true" style="margin-right: 3px;"></span><a href="tel:+212520494221">0626989766</a></li>
+                        <h4><span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="margin-right: 3px;"></span> إقليم طاطا :</h4>
+                
+                        <li class="direction"><span class="glyphicon glyphicon-earphone" aria-hidden="true" style="margin-right: 3px;"></span><a href="tel:+212520494221">0662164693</a></li>
+                        </ul><br>
+                                
+								
+								</div>
+							</div>
+						</div>
+						
+
+					</div>
+                    <h4 style="font-size: 12px;text-align: center;">Cette plateforme est conçue par M and B Global Advisoring dans le cadre du marché no 06/2022/CRISM relatif à l'accompagnement des porteurs de projets au niveau de la Région Souss-Massa dans le cadre du Programme Intégré d'Appui et de Financement des Entreprises (PIAFE)</h4>
+                    
+
+
+                    <div class="widget" style="text-align: center;">
+                                <a href="https://abrid-sm.ma/" class="logo bottommargin_20">
+                           
+                                </a>
+                              
+                            </div>
+				</div>
+			</footer>
+
+
+            <section class="ls ds parallax page_copyright section_padding_15 with_top_border_container" style="background-position: 50% 6px;">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-sm-12 text-center">
+                            <p class="small-text small-spacing grey"> 
+                                                                <a href="https://abrid-sm.ma/caravane#" style="margin-left: 20px;">سياسة الخصوصية</a>
+                                <a href="https://abrid-sm.ma/caravane#" style="margin-left: 20px;">البنود و الظروف</a>
+                            </p>
+                               </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- eof #box_wrapper -->
+    </div>
+    <!-- eof #canvas -->
+
+    <script src="./Abrid_files/compressed.js.download"></script>
+    <script src="./Abrid_files/main.js.download"></script>
+
+
+    <!-- Google Map Script -->
+    <script type="text/javascript" src="./Abrid_files/js"></script>
+
+    
+<script type="text/javascript" src="./Abrid_files/jquery.signature.js.download"></script>
+<script>
+$(function() {
+
+    var sig = $('#sig').signature({syncField: '#signature64', syncFormat: 'PNG'});
+    $('#clear').click(function(e) {
+        e.preventDefault();
+        sig.signature('clear');
+        $("#signature64").val('');
+    });
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]')
+                .attr('content')
+        }
+    });
+
+    $("#province").change(function() {
+        jQuery.ajax({
+            url: "https://abrid-sm.ma/caravane/lieux",
+            method: 'POST',
+            data: {
+                'province': $('#province').val(),
+            },
+            success: function(result) {
+
+                $("#datalieu").empty();
+                $("#datalieu").html(result);
+                $("#data_date").slideUp();
+            }
+        });
+    });
+
+    $("body").on('change', "#lieu", function() {
+        $("#date_event").val($( "#lieu option:selected" ).attr('data-date'));
+        $("#data_date").slideDown();
+    });
+
+
+});
+</script>
+
+
+
+
+<div id="EXKa2" style="transition: none 0s ease 0s;"><div class="V9i-A" data-app="pzpz-app"></div>
+    <div class="_3BMyd">
+        <div class="_1gLnF"></div>
+    </div>
+
+    <div class="uMhfm" data-app="pzpz-app"></div>
+
+    <div class="_1hZY3">
+        <div class="_31E0P"></div>
+        <div class="_48Ihs _1ZRF0"></div>
+        <div class="_48Ihs _2tK8N"></div>
+        <div class="_48Ihs _12Ws_"></div>
+        <div class="_48Ihs _2Fw8Z"> </div>
+        <div class="_48Ihs _3edFG"></div>
+        <div class="_48Ihs fE8zg"></div>
+        <div class="_48Ihs _37mMZ"></div>
+    </div>
+
+    <div class="_qWfy"></div>
+    <div class="_3m3Ci _2Ncen"></div>
+    <div class="_3m3Ci _33r5o"></div>
+    
+    <div class="FMmo6">
+        <div class="xrK4d"></div>
+        <div class="undefined"></div>
+    </div></div>
+    <div class="_2Azsj" style="display: none;">
+      <div class="_2o1j7"></div>
+
+      <div class="_1Tfrl">
+        <div class="_3cyaO">
+          <img class="_2-ojV">
+        </div>
+      </div>
+    </div>
+  
+    <div class="_2bmqy">
+      <label class="_10ATy" title="Toggle enabled Zoom photos">
+        <input type="checkbox" id="zps-switch-show" false="">
+        <div class="_1Iqul"></div>
+      </label>
+    </div>
+    <div style="display: none" class="ubey-RecordingScreen-count-down ubey-RecordingScreen-count-down-container">
+    <style>
+        .ubey-RecordingScreen-count-down-container {
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            left: 0;
+            z-index: 9999999999999;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .ubey-RecordingScreen-count-down-content {
+            position: absolute;
+            display: flex;
+            top: 50%;
+            left: 50%;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            height: 15em;
+            width: 15em;
+            transform: translate(-50%, -100%);
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+        }
+
+        #ubey-RecordingScreen-count-count {
+            font-size: 14em;
+            transform: translateY(-2%);
+        }
+    </style>
+    <div class="ubey-RecordingScreen-count-down-content">
+        <span id="ubey-RecordingScreen-count-count"></span>
+    </div>
+</div><script>
+		function returnCommentSymbol(language = "javascript") {
+			const languageObject = {
+				bat: "@REM",
+				c: "//",
+				csharp: "//",
+				cpp: "//",
+				closure: ";;",
+				coffeescript: "#",
+				dockercompose: "#",
+				css: "/*DELIMITER*/",
+				"cuda-cpp": "//",
+				dart: "//",
+				diff: "#",
+				dockerfile: "#",
+				fsharp: "//",
+				"git-commit": "//",
+				"git-rebase": "#",
+				go: "//",
+				groovy: "//",
+				handlebars: "{{!--DELIMITER--}}",
+				hlsl: "//",
+				html: "<!--DELIMITER-->",
+				ignore: "#",
+				ini: ";",
+				java: "//",
+				javascript: "//",
+				javascriptreact: "//",
+				json: "//",
+				jsonc: "//",
+				julia: "#",
+				latex: "%",
+				less: "//",
+				lua: "--",
+				makefile: "#",
+				markdown: "<!--DELIMITER-->",
+				"objective-c": "//",
+				"objective-cpp": "//",
+				perl: "#",
+				perl6: "#",
+				php: "<!--DELIMITER-->",
+				powershell: "#",
+				properties: ";",
+				jade: "//-",
+				python: "#",
+				r: "#",
+				razor: "<!--DELIMITER-->",
+				restructuredtext: "..",
+				ruby: "#",
+				rust: "//",
+				scss: "//",
+				shaderlab: "//",
+				shellscript: "#",
+				sql: "--",
+				svg: "<!--DELIMITER-->",
+				swift: "//",
+				tex: "%",
+				typescript: "//",
+				typescriptreact: "//",
+				vb: "'",
+				xml: "<!--DELIMITER-->",
+				xsl: "<!--DELIMITER-->",
+				yaml: "#"
+			}
+			return languageObject[language].split("DELIMITER")
+		}
+		var savedChPos = 0
+		var returnedSuggestion = ''
+		let editor, doc, cursor, line, pos
+		pos = {line: 0, ch: 0}
+		var suggestionsStatus = false
+		var docLang = "python"
+		var suggestionDisplayed = false
+		var isReturningSuggestion = false
+		document.addEventListener("keydown", (event) => {
+		setTimeout(()=>{
+			editor = event.target.closest('.CodeMirror');
+			if (editor){
+				const codeEditor = editor.CodeMirror
+				if(!editor.classList.contains("added-tab-function")){
+					editor.classList.add("added-tab-function")
+					codeEditor.removeKeyMap("Tab")
+					codeEditor.setOption("extraKeys", {Tab: (cm)=>{
+
+						if(returnedSuggestion){
+							acceptTab(returnedSuggestion)
+						}
+						else{
+							cm.execCommand("defaultTab")
+						}
+					}})
+				}
+				doc = editor.CodeMirror.getDoc()
+				cursor = doc.getCursor()
+				line = doc.getLine(cursor.line)
+				pos = {line: cursor.line, ch: line.length}
+
+				if(cursor.ch > 0){
+					savedChPos = cursor.ch
+				}
+
+				const fileLang = doc.getMode().name
+				docLang = fileLang
+				const commentSymbol = returnCommentSymbol(fileLang)
+				if (event.key == "?"){
+					var lastLine = line
+					lastLine = lastLine.slice(0, savedChPos - 1)
+
+					if(lastLine.trim().startsWith(commentSymbol[0])){
+						lastLine += " "+fileLang
+						lastLine = lastLine.split(commentSymbol[0])[1]
+						window.postMessage({source: 'getQuery', payload: { data: lastLine } } )
+						isReturningSuggestion = true
+						displayGrey("\nBlackbox loading...")
+					}
+				}else if(event.key === "Enter" && suggestionsStatus && !isReturningSuggestion){
+					var query = doc.getRange({ line: Math.max(0,cursor.line-10), ch: 0 }, { line: cursor.line, ch: line.length })
+					window.postMessage({source: 'getSuggestion', payload: { data: query, language: docLang } } )
+					displayGrey("Blackbox loading...")
+				}else if(event.key === "ArrowRight" && returnedSuggestion){
+					acceptTab(returnedSuggestion)
+				}else if(event.key === "Enter" && isReturningSuggestion){
+					displayGrey("\nBlackbox loading...")
+				}else if(event.key === "Escape"){
+					displayGrey("")
+				}
+			}
+		}, 0)
+		})
+
+		function acceptTab(text){
+		if (suggestionDisplayed){
+			displayGrey("")
+			doc.replaceRange(text, pos)
+			returnedSuggestion = ""
+			updateSuggestionStatus(false)
+		}
+		}
+		function acceptSuggestion(text){
+			displayGrey("")
+			doc.replaceRange(text, pos)
+			returnedSuggestion = ""
+			updateSuggestionStatus(false)
+		}
+		function displayGrey(text){
+			if(!text){
+				document.querySelector(".blackbox-suggestion").remove()
+				return
+			}
+			var el = document.querySelector(".blackbox-suggestion")
+			if(!el){
+				el = document.createElement('span')
+				el.classList.add("blackbox-suggestion")
+				el.style = 'color:grey'
+				el.innerText = text
+			}
+			else{
+				el.innerText = text
+			}
+			
+			var lineIndex = pos.line;
+			editor.getElementsByClassName('CodeMirror-line')[lineIndex].appendChild(el)
+		}
+		function updateSuggestionStatus(s){
+			suggestionDisplayed = s
+			window.postMessage({source: 'updateSuggestionStatus', status: suggestionDisplayed, suggestion: returnedSuggestion})
+		}
+		window.addEventListener('message', (event)=>{
+		if (event.source !== window ) return
+		if (event.data.source == 'return'){
+			isReturningSuggestion = false
+			const formattedCode = formatCode(event.data.payload.data)
+			returnedSuggestion = formattedCode
+			displayGrey(formattedCode)
+			updateSuggestionStatus(true)
+		}
+		if(event.data.source == 'suggestReturn'){
+			returnedSuggestion = event.data.payload.data
+			displayGrey(event.data.payload.data)
+			updateSuggestionStatus(true)
+		}
+		if(event.data.source == 'suggestionsStatus'){
+			suggestionsStatus = event.data.payload.enabled
+		}
+		if(event.data.source == 'acceptSuggestion'){
+			
+			acceptSuggestion(event.data.suggestion)
+		}
+		})
+		document.addEventListener("keyup", function(){
+			returnedSuggestion = ""
+			updateSuggestionStatus(false)
+		})
+		function formatCode(data) {
+			if (Array.isArray(data)) {
+				var finalCode = ""
+				var pairs = []
+		
+				const commentSymbol = returnCommentSymbol(docLang)
+				data.forEach((codeArr, idx) => {
+					const code = codeArr[0]
+					var desc = codeArr[1]
+					const descArr = desc.split("\n")
+					var finalDesc = ""
+					descArr.forEach((descLine, idx) => {
+						const whiteSpace = descLine.search(/\S/)
+						if (commentSymbol.length < 2 || idx === 0) {
+							finalDesc += insert(descLine, whiteSpace, commentSymbol[0])
+						}
+						if (commentSymbol.length > 1 && idx === descArr.length - 1) {
+							finalDesc = finalDesc + commentSymbol[1] + "\n"
+						}
+					})
+		
+					finalCode += finalDesc + "\n\n" + code
+					pairs.push(finalCode)
+				})
+				return "\n"+pairs.join("\n")
+			}
+		
+			return "\n"+data
+		}
+		
+		function insert(str, index, value) {
+			return str.substr(0, index) + value + str.substr(index)
+		}
+	</script><a href="https://abrid-sm.ma/caravane#" id="toTop" style="display: block;"><span id="toTopHover"></span>To Top</a></body></html>
